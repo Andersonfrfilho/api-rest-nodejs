@@ -1,0 +1,71 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Ignite-02",
+    "dateExported": "2023-03-10T03:20:41.714Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "0d2e9de4-aecd-46a4-a47b-cb23f0958a33",
+            "colId": "16e5aac3-1093-4134-9bed-ba8b6d705199",
+            "containerId": "",
+            "name": "newTransactions",
+            "url": "http://localhost:3333/transactions",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-03-10T03:04:17.422Z",
+            "modified": "2023-03-10T03:06:40.930Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\": \"Freelancer\",\n  \"amount\": 8000,\n  \"type\": \"credit\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "basic",
+                "basic": {
+                    "username": "{{RABBITMQ_USERNAME}}",
+                    "password": "{{RABBITMQ_PASSWORD}}"
+                }
+            },
+            "tests": []
+        },
+        {
+            "_id": "21a4754b-b31a-4cf7-bca7-038e3e1e37d7",
+            "colId": "16e5aac3-1093-4134-9bed-ba8b6d705199",
+            "containerId": "",
+            "name": "getTransactions",
+            "url": "http://localhost:3333/transactions",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-03-10T03:04:17.423Z",
+            "modified": "2023-03-10T03:20:24.533Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "basic",
+                "basic": {
+                    "username": "{{RABBITMQ_USERNAME}}",
+                    "password": "{{RABBITMQ_PASSWORD}}"
+                }
+            },
+            "tests": []
+        }
+    ],
+    "settings": {
+        "headers": [],
+        "auth": {
+            "type": "basic",
+            "basic": {
+                "username": "guest",
+                "password": "guest"
+            }
+        },
+        "tests": [],
+        "docs": "Rabbitmq Manager HTTP REST",
+        "options": {
+            "baseUrl": "http://localhost:15672"
+        }
+    }
+}

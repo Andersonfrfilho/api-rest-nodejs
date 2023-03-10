@@ -1,4 +1,10 @@
 {
   "editor.formatOnSaveMode": "modifications",
-  "editor.formatOnSave": true
+  "editor.formatOnSave": true,
+  "thunder-client.workspaceRelativePath": ".collections",
+  "cSpell.words": [
+    "fastify",
+    "Fastify",
+    "middlewares"
+  ]
 }
